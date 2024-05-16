@@ -274,7 +274,7 @@ const MyTable: React.FC = () => {
         await axios
             .post(`/${type}/${type}/page`, {
                 currentPage: 1,
-                pageSize: 2,
+                pageSize: 10,
             })
             .then(res => {
                 setData(res.data.data)
